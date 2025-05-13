@@ -59,11 +59,11 @@ class PresenceDetailsDataTable extends DataTable
         return $this->builder()
             ->setTableId('presencedetails-table')
             ->columns($this->getColumns())
-            // ->ajax([
-            //     'url' => route('presence.show', request()->route('presence')), // route bawaan, otomatis HTTPS
-            //     'type' => 'GET',
-            // ])
-            ->minifiedAjax() // hanya untuk akses di web local
+            ->ajax([
+                'url' => route('presence.show', request()->route('presence')), // route bawaan, otomatis HTTPS
+                'type' => 'GET',
+            ])
+            // ->minifiedAjax() // hanya untuk akses di web local
             ->orderBy(1)
             ->selectStyleSingle()
             ->buttons([
