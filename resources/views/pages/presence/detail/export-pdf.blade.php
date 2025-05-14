@@ -75,7 +75,7 @@
                             {{ $loop->iteration }}
                         </td>
                         <td class="text-center">
-                            {{ date('d/m/Y H:i', strtotime($presence->created_at)) }}
+                            {{ date('d/m/Y H:i', strtotime($detail->created_at)) }}
                         </td>
                         <td class="text-center">{{ $detail->nama }}</td>
                         <td class="text-center">{{ $detail->jabatan }}</td>
