@@ -23,4 +23,4 @@ Route::middleware(['auth'])->group(function () {
 Route::get('absen/{slug}', [AbsenController::class, 'index'])->name('absen.index');
 Route::post('absen/{id}/save', [AbsenController::class, 'save'])->name('absen.save');
 
-Auth::routes(['reset' => false]);
+Auth::routes(['register' => false ,'reset' => false]);
